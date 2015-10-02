@@ -2,30 +2,19 @@
   <div class='col-md-6'>
     <ul>
       <li ng-repeat="item in reviews">
-        <!-- <form ng-submit="MovieSiteFactory.reviews(item)"> -->
-          <a ui-serf="review({ reviewId: item.id })">{{item.title}}</a>
-
-        <!-- </form> -->
+          <a ui-serf="individual-reviews({ id: item.id })">{{item.title}}</a>
       </li>
     </ul>
-
-  </div>
-
-  <div class="col-md-6">
-    <h1>{{item.title}}</h1>
-    <p>
-      {{item.description}}
-    </p>
   </div>
 
   <div class="col-md-6 col-md-offset-6">
     <h2>Create A New Movie Review</h2>
     <form ng-submit="MovieSiteFactory.addReview()" role="form">
       <div class="form-group">
-        <input class="form-control" type="text" name="title" placeholder="Enter the title for the review here">
+        <input class="form-control" ng-model="MovieSiteFactory.reviewTitle" type="text" name="title" placeholder="Enter the title for the review here">
       </div>
       <div class="form-group">
-        <textarea class="form-control" type="text" name="description" rows="8" cols="40" placeholder="Write a description here"></textarea>
+        <textarea class="form-control" ng-model="MovieSiteFactory.reviewDescription" type="text" name="description" rows="8" cols="40" placeholder="Write a description here"></textarea>
       </div>
     <button  type="submit" class="btn btn">Submit</button>
     </form>
