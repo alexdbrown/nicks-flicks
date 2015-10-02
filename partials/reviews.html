@@ -1,12 +1,18 @@
-<div class='row'>
+<div class="</div>">
+
+  <!-- //displays movie review titles that have hyperlinks -->
   <div class='col-md-6'>
     <ul>
       <li ng-repeat="item in reviews">
-          <a ui-serf="individual-reviews({ id: item.id })">{{item.title}}</a>
+        <a ui-serf="individual-reviews.review({ id: item.id })">{{item.title}}</a>
       </li>
     </ul>
   </div>
 
+  <!-- //placeholder div that will hold individual-review.html ui-view -->
+  <div class="col-md-6" ui-view></div>
+
+  <!-- //form allowing users to write their own review -->
   <div class="col-md-6 col-md-offset-6">
     <h2>Create A New Movie Review</h2>
     <form ng-submit="MovieSiteFactory.addReview()" role="form">
@@ -16,8 +22,7 @@
       <div class="form-group">
         <textarea class="form-control" ng-model="MovieSiteFactory.reviewDescription" type="text" name="description" rows="8" cols="40" placeholder="Write a description here"></textarea>
       </div>
-    <button  type="submit" class="btn btn">Submit</button>
+      <button  type="submit" class="btn btn">Submit</button>
     </form>
-
   </div>
 </div>
