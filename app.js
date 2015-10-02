@@ -15,7 +15,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
   });
 
   $stateProvider.state('reviews', {
-    url: "",
+    url: "/reviews",
     views: {
       'header': {
         templateUrl: 'partials/header.html',

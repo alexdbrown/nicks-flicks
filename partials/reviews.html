@@ -3,7 +3,7 @@
     <ul>
       <li ng-repeat="item in reviews">
         <!-- <form ng-submit="MovieSiteFactory.reviews(item)"> -->
-          {{item.title}}
+          <a ui-serf="review({ reviewId: item.id })">{{item.title}}</a>
 
         <!-- </form> -->
       </li>
