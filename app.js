@@ -30,16 +30,9 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider.state('individual-review', {
     url: "/:reviewId",
-    // views: {
-    //   'header': {
-    //     templateUrl: 'partials/header.html',
-    //     controller: 'HeadersCtrl'
-    //   },
-    //   'body': {
-        templateUrl: "partials/individual-review.html",
-        controller: 'ReviewsCtrl'
-      // },
-    // }
+    templateUrl: "partials/individual.review.html",
+    controller: 'ReviewsCtrl'
+    
   });
 
 });

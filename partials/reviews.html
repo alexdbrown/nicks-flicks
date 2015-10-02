@@ -1,19 +1,18 @@
-<div class="</div>">
+<div class="row">
 
   <!-- //displays movie review titles that have hyperlinks -->
-  <div class='col-md-6'>
+  <div class='col-md-5'>
     <ul>
       <li ng-repeat="item in reviews">
-        <a ui-serf="individual-reviews.review({ id: item.id })">{{item.title}}</a>
+        <a ui-serf="individual-review.review({ reviewId: item.id })">{{item.title}}</a>
       </li>
     </ul>
   </div>
 
-  <!-- //placeholder div that will hold individual-review.html ui-view -->
-  <div class="col-md-6" ui-view></div>
-
-  <!-- //form allowing users to write their own review -->
-  <div class="col-md-6 col-md-offset-6">
+  <div class="col-md-7">
+      <!-- //placeholder div that will hold individual-review.html ui-view -->
+    <div ui-view></div>
+      <!-- //form allowing users to write their own review -->
     <h2>Create A New Movie Review</h2>
     <form ng-submit="MovieSiteFactory.addReview()" role="form">
       <div class="form-group">

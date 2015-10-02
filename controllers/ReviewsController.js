@@ -4,4 +4,5 @@ nicksFlicks.controller('ReviewsCtrl', function ReviewsCtrl($scope, $stateParams,
   $scope.MovieSiteFactory = MovieSiteFactory;
 
   $scope.individualReview = UtilitiesFactory.findById(MovieSiteFactory.reviews, $stateParams.reviewId);
+
 });
