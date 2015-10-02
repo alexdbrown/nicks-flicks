@@ -1,4 +1,4 @@
-ada.directive("draggable", function() {
+nicksFlicks.directive("draggable", function() {
   return function (scope, element) {
     element.draggable();
   }

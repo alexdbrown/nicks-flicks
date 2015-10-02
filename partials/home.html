@@ -1,41 +1,4 @@
-<video loop autoplay muted id="bgvid">
-  <source src="css/flying.mp4" type="video/mp4">
-</video>
-
-<div id="cockpit">
-  <div id="terminal">
-    <p id="test" ng-init="adaSpeak('Make it stop!!!', 0)">{{ message }}</p>
-  </div>
-
-  <div id="left-console" class="console">
-    <button class="light-blue-btn circle-btn"></button>
-    <button class="grey-btn circle-btn"></button>
-    <button class="blue-btn wide-btn"></button>
-    <button class="gold-btn rounded-btn"></button>
-    <button class="blue-btn wide-btn"></button>
-    <button class="gold-btn long-btn"></button>
-    <button class="gold-btn long-btn"></button>
-    <button class="orange-btn long-btn"></button>
-    <button class="light-blue-btn square-btn" ng-click="stopCountdown()"></button>
-    <button class="grey-btn circle-btn"></button>
-    <button class="blue-btn long-btn"></button>
-    <button class="gold-btn wide-btn"></button>
-    <button class="orange-btn oval-btn"></button>
-  </div>
-
-  <div id="right-console" class="console">
-    <button class="blue-btn oval-btn"></button>
-    <button class="grey-btn long-btn"></button>
-    <button class="orange-btn square-btn"></button>
-    <button class="light-blue-btn wide-btn"></button>
-    <button class="gold-btn rounded-btn"></button>
-    <button class="blue-btn wide-btn"></button>
-    <button class="gold-btn long-btn"></button>
-    <button class="orange-btn long-btn"></button>
-    <button class="light-blue-btn square-btn"></button>
-  </div>
-
-  <div class="counter" ng-init="startCountdown()">
-    <h2 class="animated infinite pulse">00:{{counter}}</h2>
-  </div>
+<div class="homepage">
+  <h1>Welcome!</h1>
+  <h3><button class="btn btn" ui-sref="reviews">Enter</button></h3>
 </div>

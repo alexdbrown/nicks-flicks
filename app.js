@@ -1,40 +1,17 @@
-var ada = angular.module('ada', ['ui.router']);
+var nicksFlicks = angular.module('nicksFlicks', ['ui.router']);
 
-ada.config(function($stateProvider, $urlRouterProvider) {
+nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('home', {
     url: "",
     views: {
+      'header': {
+        templateUrl: 'partials/header.html',
+        controller: 'HeadersCtrl'
+      },
       'body': {
         templateUrl: "partials/home.html",
-        controller: "LandingCtrl"
-      }
-    }
-  });
-
-  $stateProvider.state('explosion', {
-    url: "/explosion",
-    views: {
-      'body': {
-        templateUrl: "partials/explosion.html",
-      }
+      },
     }
 });
 
-    $stateProvider.state('homebase', {
-      url: "/homebase",
-      views: {
-        'body': {
-          templateUrl: "partials/homebase.html",
-        }
-      }
-  });
-
-  $stateProvider.state('draggable', {
-    url: "/draggable",
-    views: {
-      'body': {
-        templateUrl: "partials/draggable.html",
-      }
-    }
-  });
 });
