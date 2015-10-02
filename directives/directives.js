@@ -1,5 +1,5 @@
-nicksFlicks.directive("draggable", function() {
-  return function (scope, element) {
-    element.draggable();
-  }
-});
+// nicksFlicks.directive("draggable", function() {
+//   return function (scope, element) {
+//     element.draggable();
+//   }
+// });
