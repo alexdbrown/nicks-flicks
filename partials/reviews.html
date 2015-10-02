@@ -1,0 +1,18 @@
+<div class='row'>
+  <div class='col-md-6'>
+    <ul>
+      <li ng-repeat="item in reviews">
+        <form ng-submit="CourseFactory.signIn(item)">
+          {{item.name}}
+          <input class="button" ng-show="!item.signedIn" type="submit" value="Sign In">
+          <input class="button" ng-show="item.signedIn" type="submit" value="Sign Out">
+        </form>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="col-md-6">
+
+  </div>
+</div>
