@@ -28,11 +28,11 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
     }
   });
 
-  $stateProvider.state('individual-review', {
+  $stateProvider.state('reviews.individual-review', {
     url: "/:reviewId",
     templateUrl: "partials/individual.review.html",
     controller: 'ReviewsCtrl'
-    
+
   });
 
 });

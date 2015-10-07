@@ -4,7 +4,7 @@
   <div class='col-md-5'>
     <ul>
       <li ng-repeat="item in reviews">
-        <a ui-serf="individual-review.review({ reviewId: item.id })">{{item.title}}</a>
+        <a ui-sref="reviews.individual-review({ reviewId: item.id })">{{item.title}}</a>
       </li>
     </ul>
   </div>
